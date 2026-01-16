@@ -246,8 +246,8 @@ body {
 }
 
 .popup-card {
-    background: #494949;
-    color: #000;
+    background: #121212;
+    color: #ffffff;
     border-radius: 12px;
     width: 25%;
     max-width: 520px;
@@ -265,6 +265,14 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+#popupPrice {
+    color: #ffffff;
+}
+
+#popupDesc {
+    color: #ffffff;
 }
 
 .popup-card img {
