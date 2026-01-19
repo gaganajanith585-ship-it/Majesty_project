@@ -19,7 +19,6 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -27,18 +26,13 @@ body {
 }
 
 @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-6px);
     }
 }
-
-
 
 /* Navigation bar */
 .navbar {
@@ -53,7 +47,6 @@ body {
     z-index: 1000;
     animation: fadeIn 1s ease-in-out;
 }
-
 
 .nav-links {
     list-style: none;
@@ -83,110 +76,106 @@ body {
     color: #e2b714;
 }
 
-
-/*mens item cards*/
+/* mens item cards (ORIGINAL – UNCHANGED) */
 .page-title {
-  text-align: left;
-  color: rgb(211, 211, 211);
-  font-size: 2rem;
-  margin-bottom: 20px;
+    text-align: left;
+    color: rgb(211, 211, 211);
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .items-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.item-card {
+    background-color: #1f1f1f;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    width: 245px;
+    height: 350px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeIn 1s ease forwards;
+    cursor: pointer;
 }
 
 .item-card:hover {
-  transform: perspective(1000px) rotateY(6deg) scale(1.05);
-  box-shadow: 0 10px 10px rgb(219, 218, 212);
-}
-.item-card {
-  background-color: #1f1f1f;
-  padding: 5px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.1);
-  width: 245px;
-  height: 350px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
-  transform: perspective(1000px) rotateY(0deg);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: fadeIn 1s ease forwards;
+    transform: perspective(1000px) rotateY(6deg) scale(1.05);
+    box-shadow: 0 10px 10px rgb(219, 218, 212);
 }
 
 .item-card img {
-  width: 95%;
-  height: 75%;
-  border-radius: 10px;
+    width: 95%;
+    height: 75%;
+    border-radius: 10px;
 }
 
 .item-card h3 {
-  margin-top: 1px;
-  margin: 5px 0;
-  color: white;
+    margin: 5px 0;
+    color: white;
 }
 
 .item-card p {
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin: 1px;
-  color: goldenrod;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 1px;
+    color: goldenrod;
 }
 
 .item-card button {
-  margin-top: 5px;
-  background-color: rgb(247, 225, 30);
-  color: #1a1a1a;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
+    margin-top: 5px;
+    background-color: rgb(247, 225, 30);
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .item-card button:hover {
-  background-color: #ffe066;
+    background-color: #ffe066;
 }
 
 /* Discount Panel */
 .discount {
-  border: 2px solid gold;
+    border: 2px solid gold;
 }
 
 .discount-tag {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: gold;
-  color: #0f0f0f;
-  padding: 5px 10px;
-  font-weight: bold;
-  font-size: 0.8rem;
-  border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: gold;
+    color: #0f0f0f;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }
 
 .old-price {
-  text-decoration: line-through;
-  color: #999;
-  margin-right: 8px;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
 }
 
 .new-price {
-  color: gold;
-  font-weight: bold;
+    color: gold;
+    font-weight: bold;
 }
 
-
-
-
-/*footer*/
+/* Footer (ORIGINAL) */
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -209,9 +198,8 @@ body {
 
 .footer-column p {
     font-size: 13px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
-
 
 .footer-column h3 {
     margin-bottom: 10px;
@@ -241,4 +229,86 @@ body {
     .footer-column {
         flex: 1 1 100%;
     }
+}
+
+/* ===================================================== */
+/* ============ ADDED POPUP STYLES (NEW) ================ */
+/* ===================================================== */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.popup-card {
+    background: #121212;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 25%;
+    max-width: 520px;
+    padding: 20px;
+    position: relative;
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#popupPrice {
+    color: #ffffff;
+}
+
+#popupDesc {
+    color: #ffffff;
+}
+
+.popup-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-card h2 {
+    margin: 10px 0 5px;
+}
+
+.popup-card p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popup-cart {
+    width: 100%;
+    background: gold;
+    color: #111;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-cart:hover {
+    background: #ffe066;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    cursor: pointer;
 }
