@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
   width: 100%;
   max-width: 400px;
-  animation: fadeInUp 1s ease-out;A
+  animation: fadeInUp 1s ease-out;
 }
 .login-container h1{
   margin-bottom: 5px;
