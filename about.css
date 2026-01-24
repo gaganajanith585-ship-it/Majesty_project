@@ -154,8 +154,9 @@ body {
 }
 
 .about_us_text{
+    font-size: 12pt;
     text-align: center;
-    line-height: 30pt;
+    line-height: 25pt;
     background-color: #121212
 }
 
