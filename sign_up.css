@@ -1,0 +1,104 @@
+body {
+  background-image: url(img/shop_image.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeInUp 1s ease-out;
+}
+.login-container h1{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.brand {
+  text-align: center;
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #ffffffcc;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgb(165, 165, 162);
+  color: white;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px gold;
+}
+
+.login-form button {
+  padding: 12px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px gold;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-text a {
+  color: gold;
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
