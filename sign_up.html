@@ -1,3 +1,5 @@
+<?php include "sign_up.logic.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +11,15 @@
 <body>
   <div class="login-container">
     <h1 class="brand"><a href="home.html"><img src="img/majesty(1).png" alt="logo" width="240px" height="90px"></a></h1>
-    <form class="login-form">
+    <form action="sign_up.logic.php" method="post" class="login-form">
       <h2>Signup</h2>
       <br>
-      <input type="text" placeholder="Your Name" required>
-      <input type="text" placeholder="Your e-mail" required>
-      <input type="text" placeholder="Your adress" required>
-      <input type="text" placeholder="Your Mobile no:" required>
-      <button type="submit">Signup</button>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="email" placeholder="Your e-mail" required>
+      <input type="text" name="address" placeholder="Your Adress" required>
+      <input type="text" name="mobile" placeholder="Your Mobile no:" required>
+      <input type="password" name="password" placeholder="Enter Strong Password" required>
+      <input type="submit" name="submit" value="sign up">Signup</button>
       <p class="footer-text">Already have an account? <a href="login.html">LOGIN</a></p>
     </form>
   </div>
