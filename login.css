@@ -82,8 +82,9 @@ body {
 }
 
 #login_btn{
-  background-color: rgb(231, 195, 36);
+  background-color: rgb(247, 204, 14);
   color: #000000;
+  border: #0f0f0f;
 }
 
 .footer-text {

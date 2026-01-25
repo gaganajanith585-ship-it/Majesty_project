@@ -54,7 +54,7 @@ body {
   border: none;
   border-radius: 10px;
   background: transparent;
-  border: 1px solid rgb(165, 165, 162);
+  border: 1px solid rgb(238, 238, 236);
   color: white;
   font-size: 1rem;
 }
@@ -79,6 +79,12 @@ body {
 .login-form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 12px gold;
+}
+
+#submit_btn{
+  background-color: rgb(255, 198, 9);
+  color: #0f0f0f;
+  border: #0f0f0f;
 }
 
 .footer-text {
