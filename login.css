@@ -81,6 +81,12 @@ body {
   box-shadow: 0 0 12px gold;
 }
 
+#login_btn{
+  background-color: rgb(247, 204, 14);
+  color: #000000;
+  border: #0f0f0f;
+}
+
 .footer-text {
   text-align: center;
   margin-top: 15px;
