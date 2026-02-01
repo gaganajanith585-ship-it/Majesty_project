@@ -2,6 +2,27 @@
 session_start();
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+        
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <div class="cart_sidebar">
+        <ul>
+            <li><a href="home.html"> Add more items</a> </li>
+            <li><a href="logout.php">Logout </a> </li>
+        </ul>
+    </div>
+
+<div class="cart_main">
+    
 <h2>Your cart</h2>
 
 <?php
@@ -12,6 +33,7 @@ session_start();
 <?php 
     else: 
 ?>
+
 
 <table border="1" cellpadding="10">
 
@@ -31,22 +53,31 @@ session_start();
 
     <tr>
         <td><?= $item['name'] ?></td>
-        <td>$<?= $item['price'] ?></td>
+        <td>LKR <?= $item['price'] ?></td>
         <td><?= $item['qty'] ?></td>
-        <td>$<?= $total ?></td>
+        <td>LKR <?= $total ?></td>
     </tr>
 
     <?php endforeach; ?>
 
     <tr>
         <td colspan="3"><b>Grand Total</b></td>
-        <td><b>$<?= $grand ?></b></td>
+        <td><b>LKR <?= $grand ?></b></td>
     </tr>
 
 </table>
 
 <?php endif; ?>
 
+</div>
+
 <br>
 
-<a href="home.html"> Add more items</a>
+<a href="reset_cart.php">Reset Cart</a>
+
+
+    
+</div>
+
+</body>
+</html>
