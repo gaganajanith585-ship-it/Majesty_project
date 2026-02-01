@@ -26,7 +26,7 @@ session_start();
             <li><a href="home.html#shop_now"> Add more items</a> </li>
             <li><a href="logout.php">Logout </a> </li>
             <li><a href="reset_cart.php">Reset Cart</a></li>
-            <li class="checkout_btn"><a href="reset_cart.php">CHECK OUT</a></li>
+            <li class="checkout_btn"><a href="login.html">CHECK OUT</a></li>
         </ul>
     </div>
 
