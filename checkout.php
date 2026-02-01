@@ -20,7 +20,13 @@ if(!isset($_SESSION['user_id']))
 function orderSuccess() 
     {
         alert("Order placed successfully! \n\nPress OK to go to the main site.");
-        window.location.href = "home.html";
+        fetch('reset_cart.php')
+        .then(() => {
+            window.location.href = "home.html";
+        })
+        .catch(() => {
+            window.location.href = "home.html"; 
+        });
         return false;
     }
 </script>
