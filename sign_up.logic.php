@@ -24,6 +24,7 @@ if(isset($_POST['submit']))
                 exit();
             }
 
+        // Insert new user
         $sql = "insert into users(name,email,address,mobile,password,role) 
         values('$name','$email','$address','$mobile','$password','$role')";
         $result = mysqli_query($conn,$sql);
