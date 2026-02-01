@@ -16,14 +16,14 @@ cards.forEach(card => {
 
     const title = card.dataset.title;
     const priceText = card.dataset.price;
-    const price = priceText.replace('$', '');
+    const price = priceText.replace('LKR', '');
     const img = card.dataset.img;
-    const desc = card.dataset.desc;
+    
 
     popupImg.src = card.dataset.img;
     popupTitle.textContent = card.dataset.title;
     popupPrice.textContent = card.dataset.price;
-    popupDesc.textContent = card.dataset.desc;
+
 
     cartId.value = title.replace(/\s+/g, '_');
     cartName.value = title;
