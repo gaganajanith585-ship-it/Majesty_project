@@ -16,6 +16,59 @@ body {
     min-height: 100vh;
 }
 
+/*Details showing section */
+
+.login-form,
+.payment-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2,
+.payment-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #ffffffcc;
+}
+
+.login-form input, 
+.payment-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgb(238, 238, 236);
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.login-form input:focus,
+.payment-form input:focus {
+  outline: none;
+  box-shadow: 0 0 8px gold;
+}
+
+.login-form button,
+.payment-form button {
+  padding: 12px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}  
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -42,9 +95,6 @@ body {
     }
 }
 
-.content {
-  padding: 20px;
-}
 
 /* Navigation bar */
 .navbar 
@@ -61,51 +111,66 @@ body {
         animation: fadeIn 1s ease-in-out;
     }   
 
-/*Details showing section */
 
-.login-form {
-    width: 100%;
-    max-width: 420px;
-    margin: 20px auto; 
+
+.checkout-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
 }
 
-.login-form h2 {
-  text-align: center;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  color: #ffffffcc;
+.checkout-left,
+.checkout-right {
+    flex: 1;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
 
-.login-form input {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  border: 1px solid rgb(238, 238, 236);
-  color: white;
-  font-size: 1rem;
+.checkout-left h2,
+.checkout-right h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: gold;
 }
 
 
-.login-form input:focus {
-  outline: none;
-  box-shadow: 0 0 8px gold;
+
+.card-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
 }
 
-.login-form button {
-  padding: 12px;
-  background: gold;
-  border: none;
-  border-radius: 10px;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}   
+.card-field
+    {
+        flex: 1;
+    }
+
+.card-field input
+    {
+        max-width: 100%;
+    }
+
+.card-row div {
+    flex: 1;
+}
+
+.pay-btn {
+    width: 100%;
+    
+    padding: 10px;
+    background: gold;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /*footer*/
 .footer {
