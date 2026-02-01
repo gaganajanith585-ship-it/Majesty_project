@@ -26,7 +26,7 @@ session_start();
             <li><a href="home.html#shop_now"> Add more items</a> </li>
             <li><a href="logout.php">Logout </a> </li>
             <li><a href="reset_cart.php">Reset Cart</a></li>
-            <li><a href="reset_cart.php">Reset Cart</a></li>
+            <li class="checkout_btn"><a href="reset_cart.php">CHECK OUT</a></li>
         </ul>
     </div>
 
@@ -38,7 +38,7 @@ session_start();
 ?>
     <center>
     <h1>Cart is empty !!!</h1>
-    <br>
+    <br><br><br><br><br>
     <a href="home.html#shop_now"><button class="shop-btn">Shop Now</button></a>
     </center>
 <?php 
